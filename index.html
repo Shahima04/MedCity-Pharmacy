@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Med City - Pharmacy</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#ffffff">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+</head>
+<body>
+    <header>
+        <section>
+            <nav>
+                <input type="checkbox" id="sidebar-active">
+                <label for="sidebar-active" class="open-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </label>
+                <label id="overlay" for="sidebar-active"></label>
+                <section class="links-container">
+                    <label for="sidebar-active" class="close-sidebar-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                    </label>
+                <!--logo-->
+                <section class="logo">
+                    <img src="./main logo.png" alt="">
+                </section>
+                <ul class="ul">
+                    <li><a href="./index.html">Home</a></li>
+                        <li><a href="./checkout.html">Checkout</a></li>
+                        <li><a href="./services.html">About</a></li>
+                        <li><a href="./reservation.html">FAQ's</a></li>
+                </ul>
+                <div class="icons" id="shopping-cart">
+                    <i class="fi fi-rr-shopping-bag"></i>
+                </div>
+        </nav>
+        </section>
+    </header>
+
+    <!--Main-->
+<main>
+    <section class="pharmacy-container">
+     <div class="overlay"></div>
+     <div class="pharmacy-image">
+         <h2>Online Pharmacy</h2>
+         <p>We bring essential medications and healthcare products right to your doorstep</p>
+     </div>
+    </section>
+ </main>
+
+    <!--products section-->
+<section class="medicine">
+    <h1>Shop by Categories</h1>
+
+    <div class="medicene-btn">
+        <button onclick="showCategory('analgesics',this)">Analgesics</button>
+        <button onclick="showCategory('antibiotics',this)">Antibiotics</button>
+        <button onclick="showCategory('antidepressants',this)">Antidepressants</button>
+        <button onclick="showCategory('antihistamines',this)">Antihistamines</button>
+        <button onclick="showCategory('antihypertensives',this)">Antihypertensives</button>
+    </div>
+
+    <div id="product-container">
+        <!--placeholder for dynamic content-->
+    </div>
+</section>
+
+   <!--cart table-->
+   <section class="cart">
+    <h2 class="cart-title">Your Cart</h2>
+
+    <!--table-->
+    <div class="cart-content">
+        <table class="cart-table" id="cartTable">
+            <thead>
+                <tr>
+                    <th>Product name</th>
+                    <th>Price per product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+
+            <tbody id="cart-body">
+                <tr>
+                   
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--total-->
+    <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price" id="total-amount"></div>
+    </div>
+
+    <!--buy button-->
+    <button class="btn-buy" id="buyNow">Buy Now</button>
+   </section>
+
+   <div class="buttons">
+   <!--add to favorites-->
+   <button type="button" id="addToFavorites">Add to Favorites</button>
+
+   <!--Apply favorites-->
+   <button type="button" id="applyFavorites">Apply Favorites</button>
+</div>
+    <script src="./script.js" defer></script>
+</body>
+</html>

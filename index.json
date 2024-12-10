@@ -1,0 +1,246 @@
+[
+    {
+        "name": "Acetaminophen 500mg",
+        "image": "./acetaminophen.webp",
+        "price": 250,
+        "category": "analgesics"
+    },
+    {
+        "name": "Amitriptyline 10mg",
+        "image": "./amitriptyline.jpg",
+        "price": 870,
+        "category": "analgesics"
+    },
+    {
+        "name": "Diclofenac 50mg",
+        "image": "./Diclofenac.png",
+        "price": 180,
+        "category": "analgesics"
+    },
+    {
+        "name": "Oxycontex",
+        "image": "./oxycontex.webp",
+        "price": 500,
+        "category": "analgesics"
+    },
+    {
+        "name": "Naproxen 250mg",
+        "image": "./naproxen.jpeg",
+        "price": 120,
+        "category": "analgesics"
+    },
+    {
+        "name": "Paracetamol",
+        "image": "./Paracetamol.jpg",
+        "price": 150,
+        "category": "analgesics"
+    },
+    {
+        "name": "Indomethacin 100mg",
+        "image": "./Indomethacin.jpg",
+        "price": 150,
+        "category": "analgesics"
+    },
+    {
+        "name": "Meloxicam 7.5mg",
+        "image": "./Meloxicam.jpg",
+        "price": 300,
+        "category": "analgesics"
+    },
+    {
+        "name": "Ibuprofen 400mg",
+        "image": "./ibuprofen.webp",
+        "price": 460,
+        "category": "analgesics"
+    },
+    {
+        "name": "Aspirin 325mg",
+        "image": "./aspirin.jpg",
+        "price": 230,
+        "category": "analgesics"
+    },
+
+    {
+        "name": "Penicillin",
+        "image": "./penicillin.jpg",
+        "price": 120,
+        "category": "antibiotics"
+    },
+    {
+        "name": "Amoxillin 250mg",
+        "image": "./amoxillin.jpeg",
+        "price": 150,
+        "category": "antibiotics"
+    },
+    {
+        "name": "Ampicillin",
+        "image": "./ampicillin.jpg",
+        "price": 350,
+        "category": "antibiotics"
+    },
+    {
+        "name": "Cefadroxil 500mg",
+        "image": "./cefadroxil.jpeg",
+        "price": 230,
+        "category": "antibiotics"
+    },
+    {
+        "name": "Pepacerillin",
+        "image": "./pepacerillin.jpeg",
+        "price": 350,
+        "category": "antibiotics"
+    },
+    {
+        "name": "Cefazolin",
+        "image": "./cefazolin.avif",
+        "price": 200,
+        "category": "antibiotics"
+    },
+    {
+        "name": "Tetracycline 250mg",
+        "image": "./tetracycline.jpg",
+        "price": 500,
+        "category": "antibiotics"
+    },
+    {
+        "name": "Doxycycline 100mg",
+        "image": "./doxycycline.png",
+        "price": 450,
+        "category": "antibiotics"
+    },
+
+    {
+        "name": "Desvenlafaxine 100mg",
+        "image": "./desvenlafaxine.jpg",
+        "price": 350,
+        "category": "antidepressants"
+    },
+    {
+        "name": "Citalopram 20mg",
+        "image": "./citalopram.png",
+        "price": 400,
+        "category": "antidepressants"
+    },
+    {
+        "name": "Duloxetine 60mg",
+        "image": "./Duloxetine.png",
+        "price": 325,
+        "category": "antidepressants"
+    },
+    {
+        "name": "Vilazodone 20mg",
+        "image": "./vilazodone.webp",
+        "price": 180,
+        "category": "antidepressants"
+    },
+    {
+        "name": "Sertraline 25mg",
+        "image": "./sertraline.jpg",
+        "price": 300,
+        "category": "antidepressants"
+    },
+    {
+        "name": "Fluoxetine 20mg",
+        "image": "./fluoxetine.jpeg",
+        "price": 320,
+        "category": "antidepressants"
+    },
+    {
+        "name": "Escitalopram 10mg",
+        "image": "./escitalopram.jpeg",
+        "price": 700,
+        "category": "antidepressants"
+    },
+    {
+        "name": "Paroxetine 12.5mg",
+        "image": "./paroxetine.jpeg",
+        "price": 650,
+        "category": "antidepressants"
+    },
+
+    {
+        "name": "Promethazine",
+        "image": "./promethazine.jpeg",
+        "price": 500,
+        "category": "antihistamines"
+    },
+    {
+        "name": "Benadryl",
+        "image": "./benadryl.webp",
+        "price": 650,
+        "category": "antihistamines"
+    },
+    {
+        "name": "Hydroxizine",
+        "image": "./hydroxizine.jpg",
+        "price": 380,
+        "category": "antihistamines"
+    },
+    {
+        "name": "Allegra",
+        "image": "./allegra.jpeg",
+        "price": 400,
+        "category": "antihistamines"
+    },
+    {
+        "name": "Fexofenadine 180mg",
+        "image": "./Fexofenadine.jpg",
+        "price": 750,
+        "category": "antihistamines"
+    },
+    {
+        "name": "Loratadine 10mg",
+        "image": "./Loratadine.jpg",
+        "price": 350,
+        "category": "antihistamines"
+    },
+    {
+        "name": "Cetrizine",
+        "image": "./cetirizine.webp",
+        "price": 550,
+        "category": "antihistamines"
+    },
+    {
+        "name": "Clemastine",
+        "image": "./clemastine.webp",
+        "price": 950,
+        "category": "antihistamines"
+    },
+
+    {
+        "name": "Amlodipine 10mg",
+        "image": "./amlodipine.jpeg",
+        "price": 500,
+        "category": "antihypertensives"
+    },
+    {
+        "name": "Nifedipine tablets",
+        "image": "./nifedipine.jpg",
+        "price": 650,
+        "category": "antihypertensives"
+    },
+    {
+        "name": "Nicardipine tablets",
+        "image": "./nicardipine.jpeg",
+        "price": 170,
+        "category": "antihypertensives"
+    },
+    {
+        "name": "Verapamil tablets 40mg",
+        "image": "./verapamil2.jpeg",
+        "price": 400,
+        "category": "antihypertensives"
+    },
+    {
+        "name": "Sertraline 25mg",
+        "image": "./sertraline.jpg",
+        "price": 550,
+        "category": "antihypertensives"
+    },
+    {
+        "name": "Fluoxetine 20mg",
+        "image": "./fluoxetine.jpeg",
+        "price": 350,
+        "category": "antihypertensives"
+    }
+]
