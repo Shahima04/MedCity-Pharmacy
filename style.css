@@ -280,7 +280,7 @@ nav svg{
     font-weight: 500;
     max-width: 500px;
 }
-.main-text p{
+.main-text h4{
     font-style: italic;
     width: 500px;
     margin-top: 10px;
@@ -582,14 +582,17 @@ nav svg{
 .prescription{
     max-width: 600px;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 30px;
     padding: 20px;
     border-radius: 8px;
     border: 1px solid var(--primary-color);
 }
-.prescription h2{
+.prescription-title{
+    display: flex;
+    justify-content: center;
     font-size: 22px;
     font-weight: 500;
+    margin-top: 50px;
     padding: 10px;
 }
 .prescription label{
