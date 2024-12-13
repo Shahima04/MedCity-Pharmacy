@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
     <link rel="stylesheet" href="./checkout.css">
+    <link rel="stylesheet" href="./reset.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#ffffff">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +34,7 @@
                     </label>
                 <!--logo-->
                 <section class="logo">
-                    <img src="./main logo.png" alt="">
+                    <img src="./main-logo.png" alt="">
                 </section>
                 <ul class="ul">
                     <li><a href="./index.html">Home</a></li>
@@ -41,59 +50,43 @@
     </header>
 
     <!--checkout form-->
-    <h1 class="checkout-title">Checkout</h1>
-    <section class="checkout-info">
+    <section class="billing-section">
+        <h1>Checkout</h1>
+        <div class="billing">
         <form class="checkout-form" id="checkout-form">
-            <fieldset>
-                <legend>Customer Information</legend>
-                <div class="info">
-                    <label for="firstname">First Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="info">
-                    <label for="lastname">Last Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="info">
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-                <div class="info">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
-                </div>
-            </fieldset>
+            <h2>Customer Information</h2>
+            <label for name="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
 
-            <fieldset>
-                <legend>Delivery Information</legend>
-                <div class="info">
-                    <label for="city">City:</label>
-                    <input type="text" id="city" name="city" required>
-                </div>
-                <div class="info">
-                    <label for="address">Address:</label>
-                    <input type="text" id="address" name="address" required>
-                </div>
-                <div class="info">
-                    <label for="code">Postcode/ZIP(optional):</label>
-                    <input type="text" id="address" name="address">
-                </div>
-            </fieldset>
+            <label for="contact">Contact No:</label>
+            <input type="text" id="contact" name="contact" required>
 
-            <fieldset>
-                <legend>Payment Information</legend>
-                <p>
-                    <input type="radio" id="card" name="card" value="card">
-                    <label for="card">Credit/Debit cards & Online Transfers</label>
-                </p>
-                <p>
-                    <input type="radio" id="bank" name="bank" value="bank">
-                    <label for="bank">Direct Bank transfers</label>
-                </p>
-                <label for="order-notes">Order Notes:</label>
-                <textarea id="order-notes" rows="4" cols="50"></textarea>
-            </fieldset>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <h2>Delivery Information</h2>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="code">Postcode/ZIP:</label>
+            <input type="text" id="code" name="code">
+
+            <h2>Payment Information</h2>
+            <div class="radio-group">
+                <input type="radio" id="credit" name="payment" value="credit">
+                <label for="credit">Credit/Debit card</label>
+
+                <input type="radio" id="bank" name="payment" value="bank">
+                <label for="bank">Bank transfers</label>
+            </div>
+
+            <label for="notes">Order Notes:</label>
+            <textarea name="notes" id="notes" rows="4"></textarea>
         </form>
+    
 
         <!--order summary-->
         <section class="checkout">
@@ -115,7 +108,8 @@
             <button class="btn-pay" id="payNow">Pay Now</button>
         </section>
         <div id="message" class="hidden"></div>
-    </section>
+    </div>
+</section>
 
 <script src="./checkout.js"></script>
 </body>

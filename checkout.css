@@ -150,54 +150,55 @@ nav svg{
 }
 
 /*checkout form*/
-.checkout-info{
+.billing{
     display: flex;
-    width: 100%;
+    gap: 20px;
 }
-.checkout-title{
-    font-weight: 500;
-    padding: 20px;
+.billing-section h1{
     text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+    margin-top: 20px;
 }
 .checkout-form{
+    max-width: 600px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-color);
+}
+.checkout-form h2{
+    font-size: 22px;
+    font-weight: 500;
+    padding: 10px;
+}
+.checkout-form label{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 18px;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color:#eff3ef;
+}
+.radio-group{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    margin: 10px auto;
 }
-.checkout-form fieldset{
-    width: 700px;
-    padding: 14px;
-    border-radius: 10px;
-    margin: 10px;
-    border: 1px solid black;
-}
-.checkout-form legend{
-    font-size: 1.5em;
-    font-weight: 500;
-    color: black;
-}
-.info{
-    margin-bottom: 20px;
-}
-.info label{
-    display: flex;
-    font-weight: 400;
-    margin-bottom: 5px;
-    font-size: 20px;
-}
-.checkout-form input{
-    width: 500px;
-    padding: 5px;
-    border: 1px solid black;
-    border-radius: 5px;
-    font-size: 1em;
-    font-family: inherit;
-}
-.checkout-form textarea{
-    width: 500px;
+.checkout-form input:focus,
+.checkout-form textarea:focus{
+    border-color: #12372A;
+    outline: none;
+    box-shadow: 0 0 4px #12372A;
 }
 
 /*order summary*/
@@ -213,7 +214,7 @@ nav svg{
 .checkout h1{
     text-align: center;
     margin-bottom: 30px;
-    font-size: 1.5rem;
+    font-size: 20px;
     font-weight: 500;
     width: 100%;
     padding: 20px;
@@ -229,14 +230,14 @@ nav svg{
     padding: 10px;
     vertical-align: middle;
     border-radius: 5px;
-    font-size: 19px;
+    font-size: 18px;
 }
 .cart-table th{
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
 }
 .total{
-    font-size: 22px;
+    font-size: 18px;
     padding: 10px;
     margin-top: 20px;
     background-color: whitesmoke;
