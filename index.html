@@ -47,21 +47,50 @@
                 </ul>
                 <div class="icons" id="shopping-cart">
                     <i class="fi fi-rr-shopping-bag"></i>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search for products" class="search-input">
+                        <button class="search-btn">
+                            <i class="fi fi-br-search"></i>
+                        </button>
+                    </div>
                 </div>
         </nav>
         </section>
     </header>
 
-    <!--Main-->
-<main>
-    <section class="pharmacy-container">
-     <div class="overlay"></div>
-     <div class="pharmacy-image">
-         <h2>Online Pharmacy</h2>
-         <p>We bring essential medications and healthcare products right to your doorstep</p>
-     </div>
-    </section>
- </main>
+    <!--main-->
+    <main>
+        <section class="container">
+            <section class="main-text">
+                <h2>Med City Pharmacy</h2>
+                <p>"Your Health, Our Priority"</p>
+                <h3>Committed to being your trusted partner in health and wellness</h3>
+
+                <div class="prescription-btn">
+                    <button id="prescription-btn">Upload Prescription</button>
+                </div>
+            </section>
+
+            <div class="main-gallery">
+                <div class="img-box"></div>
+                <div class="img-box"></div>
+                <div class="img-box"></div>
+                <div class="img-box"></div>
+            </div>
+        </section>
+
+        <!--photo gallery-->
+        <!--for mobile version only-->
+        <div class="photo-gallery">
+            <div class="column">
+                <div class="photo">
+                    <img src="./pharmacy.webp" alt="">
+                </div>
+                <div class="photo">
+                    <img src="./pharmacy1.webp" alt="">
+                </div>
+            </div>
+    </main>
 
     <!--products section-->
 <section class="medicine">
@@ -82,11 +111,11 @@
 
    <!--cart table-->
    <section class="cart">
-    <h2 class="cart-title">Your Cart</h2>
+    <h2 class="cart-title" id="cartTable">Your Cart</h2>
 
     <!--table-->
     <div class="cart-content">
-        <table class="cart-table" id="cartTable">
+        <table class="cart-table" >
             <thead>
                 <tr>
                     <th>Product name</th>
@@ -122,6 +151,38 @@
    <!--Apply favorites-->
    <button type="button" id="applyFavorites">Apply Favorites</button>
 </div>
+
+<!--prescription form-->
+<form class="prescription" id="prescription">
+    <h2>Prescription Information</h2>
+    <label for="name">Patient Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="age">Patient Age:</label>
+    <input type="text" id="age" name="age" required>
+    
+    <label for="contact">Contact No:</label>
+    <input type="text" id="contact" name="contact" required>
+
+    <label>Attach the doctor's prescription</label>
+    <input type="file" name="prescription1">
+    <input type="file" name="prescription2">
+
+    <label for="delivery">Delivery:</label>
+    <select id="delivery" name="delivery" required>
+        <option value="" disabled selected>--Please choose an option--</option>
+        <option value="home">Home <inputDelivery</option>
+        <option value="pickup">Pick up</option>
+    </select>
+
+    <label for="address">Delivery address:</label>
+    <input type="text" id="address" name="address">
+
+    <label for="message">Your message:</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <button type="submit" class="submit-btn">Submit</button>
+</form>
     <script src="./script.js" defer></script>
 </body>
 </html>

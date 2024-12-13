@@ -97,14 +97,43 @@ nav svg{
 }
 .icons{
     display: flex;
-    justify-content:center;
-    padding: 20px;
     font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
     border: none;
     cursor: pointer;
     background-color: none;
 }
-
+.search-bar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    max-width: 230px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.search-input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    background-color: #12372A;
+    padding: 5px;
+}
+.search-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #12372A;
+    padding: 5px;
+}
+.search-btn i{
+    pointer-events: none;
+}
 
 /*nav bar responsiveness*/
 @media (max-width: 900px){
@@ -153,43 +182,167 @@ nav svg{
 }
 
 /*main*/
-.pharmacy-container{
-    position: relative;
-    background: url(./pharmacy1.webp) no-repeat center center/cover;
-    height: 70vh;
+.container{
+    max-width: 1500px;
+    width: 100%;
+    padding: 30px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.main-gallery{
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    margin: 10px auto;
-    margin-left: 10px;
-    margin-right: 10px;
 }
-.pharmacy-container .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color:rgba(0, 0, 0, 0.4);
-}
-.pharmacy-image{
+.img-box{
+    width: 180px;
+    height: 500px;
+    margin: 8px;
+    border-radius: 10px;
+    background: url(./pharmacy.webp);
+    background-size: cover;
+    background-position: center;
     position: relative;
-    z-index: 1;
+    transition: width 0.5s;
 }
-.pharmacy-image h2{
-    color: var(--primary-color);
+.img-box:nth-child(2){
+    background: url(./pharmacy1.webp);
+    background-size: cover;
+    background-position: center;
+}    
+.img-box:nth-child(3){
+    background: url(./pharmacy\ 3.avif);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(4){
+    background: url(./pressure.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box h3{
+    font-size: 25px;
     font-weight: 600;
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    letter-spacing: 2px;
+    color: var(--text-color);
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
 }
-.pharmacy-image p{
-    color: white;
-    font-size: 20px;
-    margin-bottom: 2rem;
+.img-box:hover{
+    width: 300px;
+    cursor: pointer;
+}
+.img-box:hover h3{
+    opacity: 1;
+    bottom: 25px;
+}
+.main-text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 20px;
+    border-radius: var(--border-radius);
+    padding: 10px;
+    animation: main 2s ease 0s 1 normal forwards;
+}
+
+/*animation for main text*/
+@keyframes main {
+	0% {
+		opacity: 0;
+		transform: translateX(-150px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.main-text h2{
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+.main-text h3{
+    font-size: 25px;
+    font-weight: 500;
+    max-width: 500px;
+}
+.main-text p{
+    font-style: italic;
+    width: 500px;
+    margin-top: 10px;
+    font-size: 21px;
     font-weight: 500;
 }
+.prescription-btn{
+    align-items: center;
+    margin-top: 3rem;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    background-color: whitesmoke;
+    border: 2px solid  rgb(21, 62, 50);
+    color: var(--primary-color);
+    font-size: 19px;
+    border-radius: 7px;
+}
+.prescription-btn:hover{
+    background-color: var(--primary-color);
+    transition: all 0.3s ease;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/*photo gallery for mobile version only*/
+.container .photo-gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    background-color: antiquewhite;
+}
+.column{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+.photo img{
+    width: 100vh;
+    object-fit: cover;
+    height: 40vh;
+    border-radius: 5px;
+}
+/*mobile version photo gallery*/
+@media(min-width: 769px){  /*hides the photo gallery on screens larger than 768px*/
+    .photo-gallery{
+        display: none;
+    }
+}
+@media(max-width: 900px){  /* Show the section on screens smaller than 900px (mobile) */
+    .photo-gallery{
+        display: block;
+        padding: 10px;
+    }
+    .main-gallery{
+        display: none;
+    }
+    .main-text{
+        height: 40vh;
+    }
+}
+
 
 /*products section*/
 .medicine h1{
@@ -197,13 +350,16 @@ nav svg{
     font-weight: 500;
     padding: 20px;
     background-color: #bde0c9;
+    font-size: 22px;
 }
 .medicene-btn{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
     padding: 20px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .medicene-btn button{
     border: 3px whitesmoke solid;
@@ -227,7 +383,7 @@ nav svg{
 .card-container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    padding: 20px;
+    margin: 0 20px 0 20px;
     gap: 30px;
 }
 .card{
@@ -287,6 +443,12 @@ nav svg{
     height: 0;
     overflow: hidden;
 }
+@media (max-width: 900px){
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
 
 /*cart table*/
 .cart{
@@ -294,8 +456,9 @@ nav svg{
     flex-direction: column;
     max-width: 900px;
     padding: 20px;
-    margin: 10px auto;
+    margin: auto;
     border-radius: 10px;
+    margin-top: 3rem;
     background-color: whitesmoke;
 }
 .cart-title{
@@ -409,4 +572,50 @@ nav svg{
     cursor: pointer;
     font-family: "Poppins", sans-serif;
     background-color: #bde0c9;
+}
+
+/*prescription form*/
+.prescription{
+    max-width: 600px;
+    margin: auto;
+    margin-top: 60px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-color);
+}
+.prescription h2{
+    font-size: 22px;
+    font-weight: 500;
+    padding: 10px;
+}
+.prescription label{
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+}
+input[type="text"],
+select,
+textarea{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color:#eff3ef;
+}
+textarea{
+    resize: vertical;
+}
+input[type="file"]{
+    margin-bottom: 10px;
+}
+.submit-btn{
+    align-items: center;
+    text-decoration: none;
+    padding: 8px;
+    border: 2px solid  rgb(21, 62, 50);
+    color: var(--primary-color);
+    font-size: 19px;
+    border-radius: 7px;
+    cursor: pointer;
 }

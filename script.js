@@ -236,3 +236,7 @@ function loadMedicines(){
 // Call the loadMedicines function when the page is loaded
 document.addEventListener("DOMContentLoaded", loadMedicines);
 
+//add event listener to the upload prescription button
+document.getElementById("prescription-btn").addEventListener("click",function(){
+document.getElementById("prescription").scrollIntoView({behavior:"smooth"});
+});
