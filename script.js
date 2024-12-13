@@ -137,7 +137,6 @@ function applyFavorites(){
   //parse favorites from local storage
   const favoriteItems = JSON.parse(savedFavorites);
 
-
   //update cart with favorites
   favoriteItems.forEach(item => {
     cartItems.push({
@@ -150,7 +149,6 @@ function applyFavorites(){
 
 //add event listener to apply favorites button
 document.getElementById("applyFavorites").addEventListener("click",applyFavorites);
-
 
 // Initial cart update
 updateCart();

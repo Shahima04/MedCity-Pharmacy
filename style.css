@@ -103,7 +103,6 @@ nav svg{
     gap: 40px;
     border: none;
     cursor: pointer;
-    background-color: none;
 }
 .search-bar{
     display: flex;
@@ -123,6 +122,10 @@ nav svg{
     background-color: #12372A;
     padding: 5px;
 }
+.search-bar label{
+    visibility: hidden;
+    font-size: 2px;
+}
 .search-btn{
     background: none;
     border: none;
@@ -134,7 +137,6 @@ nav svg{
 .search-btn i{
     pointer-events: none;
 }
-
 /*nav bar responsiveness*/
 @media (max-width: 900px){
     .links-container{
@@ -147,7 +149,7 @@ nav svg{
         z-index: 10;
         width: 300px;
 
-        background-color: var(--primary-color);
+        background-color: whitesmoke;
         transition: 1s ease-out;
     }
     .ul{
