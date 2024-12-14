@@ -21,6 +21,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
 <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-solid-straight/css/uicons-solid-straight.css'>
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-brands/css/uicons-brands.css'>
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
 </head>
 <body>
     <header>
@@ -43,10 +47,12 @@
                     <img src="./main-logo.png" alt="">
                 </div>
                 <ul class="ul">
-                    <li><a href="./index.html">Home</a></li>
-                        <li><a href="./checkout.html">Checkout</a></li>
-                        <li><a href="./services.html">About</a></li>
-                        <li><a href="./reservation.html">FAQ's</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Consultancy Reservation</a></li>
+                    <li><a href="./index.html" class="active">Pharmacy</a></li>
+                    <li><a href="">Contact us</a></li>
                 </ul>
                 <div class="icons">
                     <i class="fi fi-rr-shopping-bag" id="shopping-cart"></i>
@@ -99,6 +105,21 @@
             </div>
         </div>
     </main>
+
+    <section class="pharmacy-facts">
+        <div class="facts">
+            <i class="fi fi-ss-credit-card"></i>
+                <h2>Secure online payment options</h2>
+        </div>
+        <div class="facts">
+            <i class="fi fi-ss-money-bill-wave"></i>
+                <h2>Products from verified suppliers</h2>
+        </div>
+        <div class="facts">
+            <i class="fi fi-ss-hr-person"></i>
+                <h2>Dedicated support (Phone: 081 123 1123)</h2>
+        </div>
+    </section>
 
     <!--products section-->
 <section class="medicine">
@@ -176,8 +197,8 @@
     <label for="contact">Contact No:</label>
     <input type="text" id="contact" name="contact" required>
 
-    <label for="prescription">Attach the doctor's prescription</label>
-    <input type="file" name="prescription1" id="prescription">
+    <label for="prescription1">Attach the doctor's prescription</label>
+    <input type="file" name="prescription1" id="prescription1">
 
     <label for="delivery">Delivery:</label>
     <select id="delivery" name="delivery" required>
@@ -194,6 +215,48 @@
 
     <button type="submit" class="submit-btn">Submit</button>
 </form>
+
+<!--footer section-->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-column">
+                <img src="./footer-logo.png" alt="logo">
+                <h3>About us</h3>
+                <p>Dedicated to providing a compassionate care that not only heals the body but also soothes the mind and spirit.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./contact us.html">Contact us</a></li>
+                        <li><a href="./doctors.html">Doctors</a></li>
+                        <li><a href="./reservation.html">Consultancy Reservation</a></li>
+                        <li><a href="./about us.html">About us</a></li>
+                        <li><a href="./pharmacy.html">Pharmacy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact us</h3>
+                <p>Email: medcity@hospital.lk</p>
+                <p>Phone: 081 123 1123</p>
+            </div>
+            <div class="footer-column">
+                <h3>Follow us</h3>
+                <div class="social-icons">
+                    <i class="fi fi-brands-whatsapp"></i>
+                    <i class="fi fi-brands-instagram"></i>
+                    <i class="fi fi-brands-facebook"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Med City. All rights reserved</p>
+    </div>
+</footer>
+
     <script src="./script.js" defer></script>
 </body>
 </html>

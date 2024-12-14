@@ -109,7 +109,7 @@ nav svg{
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
-    max-width: 230px;
+    max-width: 220px;
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -120,7 +120,6 @@ nav svg{
     background: transparent;
     font-size: 16px;
     background-color: #12372A;
-    padding: 4px;
 }
 .search-bar label{
     visibility: hidden;
@@ -143,14 +142,12 @@ nav svg{
 @media (max-width: 900px){
     .links-container{
         flex-direction: column;
-        align-items: flex-start;
-
+        align-items: center;
         position: fixed;
         top: 0;
         right: -100%;
         z-index: 10;
         width: 300px;
-
         background-color: whitesmoke;
         transition: 1s ease-out;
     }
@@ -181,6 +178,12 @@ nav svg{
         z-index: 9;
     }
     .search-container{
+        display: none;
+    }
+    .search-bar{
+        display: none;
+    }
+    .icons{
         display: none;
     }
 }
@@ -304,6 +307,34 @@ nav svg{
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
+@media(max-width:768px){
+    .main-text h2{
+        font-size: 30px;
+    }
+    .main-text h3{
+        font-size: 20px;
+    }
+    .main-text h4{
+        font-size: 19px;
+    }
+    .prescription-btn{
+        font-size: 15px;
+    }
+}
+@media(max-width:480px){
+    .main-text h2{
+        font-size: 30px;
+    }
+    .main-text h3{
+        font-size: 20px;
+    }
+    .main-text h4{
+        font-size: 19px;
+    }
+    .prescription-btn{
+        font-size: 15px;
+    }
+}
 
 /*photo gallery for mobile version only*/
 .container .photo-gallery{
@@ -346,7 +377,29 @@ nav svg{
         height: 40vh;
     }
 }
-
+/*facts*/
+.pharmacy-facts{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px auto;
+}
+.facts{
+    font-size: 19px;
+    max-width: 500px;
+    padding: 30px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--primary-color);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+.facts i{
+    font-size: 30px;
+}
 
 /*products section*/
 .medicine h1{
@@ -577,12 +630,68 @@ nav svg{
     font-family: "Poppins", sans-serif;
     background-color: #bde0c9;
 }
+/*responsiveness*/
+@media(max-width: 768px){
+    .cart-table th, .cart-table td{
+        font-size: 16px;
+        padding: 8px;
+    }
+    .cart-title{
+        font-size: 1rem;
+    }
+    .btn-buy{
+        font-size: 0.9rem;
+    }
+    .medicene-btn button{
+        font-size: 15px;
+        padding: 11px;
+    }
+    .total{
+        font-size: 1rem;
+    }
+    #addToFavorites{
+        font-size: 15px;
+        padding: 11px;
+    }
+    #applyFavorites{
+        font-size: 15px;
+        padding: 11px;
+    }
+}
+@media(max-width: 480px){
+    .cart-table th, .cart-table td{
+        font-size: 15px;
+        padding: 6px;
+    }
+    .cart-title{
+        font-size: 0.9rem;
+    }
+    .btn-buy{
+        font-size: 0.8rem;
+    }
+    .medicene-btn button{
+        font-size: 15px;
+        padding: 11px;
+    }
+    .total{
+        font-size: 0.9rem;
+    }
+    #addToFavorites{
+        font-size: 15px;
+        padding: 11px;
+    }
+    #applyFavorites{
+        font-size: 15px;
+        padding: 11px;
+    }
+}
 
 /*prescription form*/
 .prescription{
     max-width: 600px;
     margin: auto;
     margin-top: 30px;
+    margin-bottom: 30px;
     padding: 20px;
     border-radius: 8px;
     border: 1px solid var(--primary-color);
@@ -594,6 +703,7 @@ nav svg{
     font-weight: 500;
     margin-top: 50px;
     padding: 10px;
+    background-color: #eff3ef;
 }
 .prescription label{
     display: block;
@@ -625,4 +735,92 @@ input[type="file"]{
     font-size: 19px;
     border-radius: 7px;
     cursor: pointer;
+}
+@media(max-width:768px){
+    .prescription label{
+        font-size: 15px;
+    }
+    .submit-btn{
+        font-size: 16px;
+        padding: 6px;
+    }
+}
+@media(max-width:480px){
+    .prescription label{
+        font-size: 15px;
+    }
+    .submit-btn{
+        font-size: 16px;
+        padding: 6px;
+    }
+}
+
+/*footer*/
+.footer{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 0;
+    font-size: 17px;
+}
+.footer-container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-column{
+    flex: 1 1 250px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.footer-column img{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+.footer-column h3{
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.footer-column p, li{
+    text-decoration: none;
+    list-style-type: none;
+    line-height: 1.7;
+}
+.footer-column a{
+    color: white;
+    text-decoration: none;
+}
+.footer-column a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.social-icons i{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 30px;
+}
+.footer-bottom{
+    text-align: center;
+    padding-top: 20px;
+}
+.footer-bottom p{
+    font-size: 14px;
+}
+
+
+ /*footer responsiveness*/
+@media (max-width: 900px){
+.footer-row{
+    flex-direction: column;
+}
+.footer-column{
+    flex: 1 1 100%;
+    margin-bottom: 30px;
+}
 }

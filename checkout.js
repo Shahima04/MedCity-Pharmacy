@@ -23,7 +23,6 @@ window.onload = function(){
     });
     document.getElementById("checkout-total").textContent = totalAmount;
 };
-
 //displays a message when the pay button is clicked
 document.getElementById("payNow").addEventListener("click",()=>{
     const form = document.getElementById('checkout-form');
