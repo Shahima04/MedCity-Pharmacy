@@ -545,7 +545,7 @@ nav svg{
 }
 .cart-quantity {
     width: 80px;
-    font-size: 21px;
+    font-size: 18px;
     text-align: center;
 }   
 .cart-remove {
@@ -582,10 +582,10 @@ nav svg{
 }
 .quantity-input{
     width: 30%;
-    padding: 5px;
+    padding: 3px;
     border: 2px solid #ccc;
     border-radius: 5px;
-    font-size: 19px;
+    font-size: 17px;
     text-align: center;
 }
 .remove-btn{
