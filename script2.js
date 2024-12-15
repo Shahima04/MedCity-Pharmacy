@@ -146,7 +146,7 @@ function hideAllSections() {
                 <div class="card-info">
                   <h3>${medicine.name}</h3>
                   <p>Rs.${medicine.price}</p>
-                  <label for="qty-${sanitizedName}">quantity</label>
+                  <label for="qty-${sanitizedName}">Quantity</label>
                   <input 
                     type="number" 
                     id="qty-${sanitizedName}" 
