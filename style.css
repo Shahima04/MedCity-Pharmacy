@@ -359,13 +359,13 @@ nav svg{
     height: 40vh;
     border-radius: 5px;
 }
-/*mobile version photo gallery*/
+
 @media(min-width: 769px){  /*hides the photo gallery on screens larger than 768px*/
     .photo-gallery{
         display: none;
     }
 }
-@media(max-width: 900px){  /* Show the section on screens smaller than 900px (mobile) */
+@media(max-width: 900px){   /*Show the section on screens smaller than 900px (mobile) */
     .photo-gallery{
         display: block;
         padding: 10px;
@@ -375,14 +375,6 @@ nav svg{
     }
     .main-text{
         height: 40vh;
-    }
-}
-@media(max-width:1024px){
-    .photo-gallery{
-        display: block;
-    }
-    .main-gallery{
-        display: none;
     }
 }
 /*facts*/
@@ -420,9 +412,6 @@ nav svg{
         font-weight: 400;
         padding: 20px;
     }
-}
-.main-gallery{
-    display: none;
 }
 
 /*products section*/
