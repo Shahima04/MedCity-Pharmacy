@@ -139,7 +139,7 @@ nav svg{
     display: none;
 }
 /*nav bar responsiveness*/
-@media (max-width: 900px){
+@media (max-width: 1024px){
     .links-container{
         flex-direction: column;
         align-items: center;
@@ -377,6 +377,14 @@ nav svg{
         height: 40vh;
     }
 }
+@media(max-width:1024px){
+    .photo-gallery{
+        display: block;
+    }
+    .main-gallery{
+        display: none;
+    }
+}
 /*facts*/
 .pharmacy-facts{
     width: 100%;
@@ -386,8 +394,9 @@ nav svg{
     margin: 40px auto;
 }
 .facts{
-    font-size: 19px;
+    font-size: 18px;
     max-width: 500px;
+    font-weight: 500;
     padding: 30px;
     align-items: center;
     text-align: center;
@@ -399,6 +408,21 @@ nav svg{
 }
 .facts i{
     font-size: 30px;
+}
+@media(max-width: 480px){
+    .pharmacy-facts{
+        display: flex;
+     max-width: 300px;
+           flex-wrap: wrap;
+    }
+    .facts{
+        font-size: 15px;
+        font-weight: 400;
+        padding: 20px;
+    }
+}
+.main-gallery{
+    display: none;
 }
 
 /*products section*/
